@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Костел Непорочного Зачаття Пресвятої Діви Марії</title>
+    <link rel="stylesheet" href="./about.css">
+</head>
+<body>
+    <header> 
+        <nav>
+            <a href="../main/index.html">Головна</a>
+            <a href="../gallery/index.html">Галерея</a>
+            <a href="../about/index.html">Історія та події</a>
+            <a href="../location/index.html">Місцезнаходження</a>
+        </nav>
+    </header>
+    <main>
+        <div style="display: flex;align-content: center; justify-content: space-around; width: 100%;">
+            <button class="aboutbtn" id="events-btn">Події</button>
+            <button class="aboutbtn" id="history-btn">Історія</button>
+        </div>
+        <ul id="events">
+            <li class="card">
+                <img src="../img/side.jpg" alt="1" class="news-img">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eligendi veniam in hic obcaecati porro asperiores ab molestiae,
+                    provident, nostrum consequuntur rem a adipisci, dolore eius? 
+                    Eligendi minima ipsum ullam unde?
+                </p>
+                <button class="more-btn">Детальніше</button>
+            </li>
+            <li class="card">
+                <img src="../img/зображення_viber_2024-07-28_13-37-21-077.jpg" alt="1" class="news-img">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eligendi veniam in hic obcaecati porro asperiores ab molestiae,
+                    provident, nostrum consequuntur rem a adipisci, dolore eius? 
+                    Eligendi minima ipsum ullam unde?
+                </p>
+                <button class="more-btn">Детальніше</button>
+            </li>
+            <li class="card">
+                <img src="../img/goldCrest.jpg" alt="1" class="news-img">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eligendi veniam in hic obcaecati porro asperiores ab molestiae,
+                    provident, nostrum consequuntur rem a adipisci, dolore eius? 
+                    Eligendi minima ipsum ullam unde?
+                </p>
+                <button class="more-btn">Детальніше</button>
+            </li>
+            <li class="card">
+                <img src="../img/hall.jpg" alt="1" class="news-img">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eligendi veniam in hic obcaecati porro asperiores ab molestiae,
+                    provident, nostrum consequuntur rem a adipisci, dolore eius? 
+                    Eligendi minima ipsum ullam unde?
+                </p>
+                <button class="more-btn">Детальніше</button>
+            </li>
+            <li class="card">
+                <img src="../img/side.jpg" alt="1" class="news-img">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eligendi veniam in hic obcaecati porro asperiores ab molestiae,
+                    provident, nostrum consequuntur rem a adipisci, dolore eius? 
+                    Eligendi minima ipsum ullam unde?
+                </p>
+                <button class="more-btn">Детальніше</button>
+            </li>
+        </ul>
+        <ul id="history" style="display: none; width: 900px; font-size: 24px; justify-content: left; ">
+            <div style="display: flex;">
+                <p style="margin: 20px;">У 1824 році в Ямполі було засновано самостійну парафію, а наступного року консекровано храм.
+                    У радянські часи його зачинили спочатку 1931 року, а потім (після відновлення під час 
+                    німецько-румунської окупації) - 1945 року, перетворивши святиню на склад. Наприкінці 50-х 
+                    років її було повністю розібрано. Місцеві римо-католики збирались на молитву у своїх будинках,
+                    бо навіть колишня цвинтарна каплиця знаходилась у вкрай зруйнованому стані. Від 90-х роках сюди 
+                    доїждали оо. Ян Прушинський та Ян Дукля.
+                </p>
+                <img src="../img/зображення_viber_2024-07-28_13-37-19-420.jpg" alt="1" style="float: right;" height="600px">    
+            </div>
+            <div style="display: flex; margin-top: 70px;">
+                <img src="../img/зображення_viber_2024-07-28_13-37-22-331.jpg" alt="2" height="500px" style=" object-fit: contain;" >    
+           
+                <p style="margin: 20px; min-width: 400px;">
+                    У 2008 році розпочалось будівництво храму недалеко від місця розташування зруйнованої колишньої
+                     святині, причому розпочалось воно не із закладення фундаменту, а з відгородження території,
+                      на якій мало проводитись спорудження. Завдяки жертводавцям із Польщі та Ямполя будівництво 
+                      та оснащення костелу було завершено 2017 року. 23 вересня його консекрував єпископ Леон Дубравський 
+                      OFM за участю єпископів Броніслава Бернацького та Яцека Пиля OMI.
+                </p>
+                 </div>
+            </ul>
+    </main>
+    <footer>
+        <div id="copyright" align="center">&copy;  2024 www.your-site.com - All Rights Reserved.</div>
+        <script>
+            (() => {
+                let cpr = document.getElementById("copyright");
+                cpr.innerHTML = "&copy;  "+new Date().getFullYear()+" www.your-site.com - All Rights Reserved.";
+                cpr.innerHTML += "<br/>Last Updated : "+document.lastModified;
+            })();
+        </script>
+       </footer>
+       <script>
+         document.getElementById("history-btn").addEventListener("click", function() {
+            document.getElementById("history").style.display = "block";
+            document.getElementById("events").style.display = "none";
+        });
+
+        document.getElementById("events-btn").addEventListener("click", function() {
+            document.getElementById("history").style.display = "none";
+            document.getElementById("events").style.display = "flex";
+        }); 
+       </script>
+</body>
+</html>
