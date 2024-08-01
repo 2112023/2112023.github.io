@@ -5,6 +5,9 @@ body{
     background-color: antiquewhite;
     overflow-x: hidden;
 }
+header{
+  width: 100%;
+}
 nav {
     text-align: center;
     background-color: black;

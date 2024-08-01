@@ -5,6 +5,14 @@ body{
     background-color: antiquewhite;
     overflow-x: hidden;
 }
+header{
+    width: 100%;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
 nav {
     text-align: center;
     background-color: black;
@@ -31,13 +39,15 @@ footer{
 }
 .map{
     height: 600px;
-    margin: 20px;
+    margin-right: 2rem;
+    margin-left: 2rem;
 }
 .info{
-    float: right;
     font-size: 20px;
-    margin-right: 150px;
+    margin-right: 2rem;
+    justify-content: center;
 }
+
 .loc-img{
     margin: 20px;
     border-radius: 8px;

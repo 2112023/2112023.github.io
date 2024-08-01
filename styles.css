@@ -3,7 +3,14 @@ body{
     margin: 0;
     font-family: "Oswald";
     background-color: antiquewhite;
-    overflow-x: hidden;
+    
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+header{
+    width: 100%;
 }
 h1 {
     text-align: center;
@@ -22,8 +29,7 @@ nav a {
     text-decoration: none;
 }
 .hero-img {
-    float: right;
-    margin-right: 50px;
+    margin-left: 10rem;
 }
 .more-btn{
     align-self: center;
@@ -38,9 +44,19 @@ nav a {
 footer{
     margin-top: 220px;
     padding: 40px;
+    padding-right: 0;
     position: absolute;
     background-color: black;
     color: white;
     width: 100%;
 
+}
+@media (max-width: 375px) {
+    body{
+        max-width: 375px;
+    }
+    main{
+        display: block;
+    }
+    
 }
