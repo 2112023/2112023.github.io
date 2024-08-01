@@ -3,6 +3,7 @@ body{
     margin: 0;
     font-family: "Oswald";
     background-color: antiquewhite;
+    overflow-x: hidden;
     
 }
 main{
@@ -28,6 +29,15 @@ nav a {
     color: white;
     text-decoration: none;
 }
+.mainText{
+    display: flex;
+    flex-direction: column;
+     text-align: center;
+     justify-content: space-between;
+     height: 500px;
+      width: 500px;
+      margin-left: 150px;
+}
 .hero-img {
     margin-left: 10rem;
 }
@@ -44,19 +54,37 @@ nav a {
 footer{
     margin-top: 220px;
     padding: 40px;
-    padding-right: 0;
     position: absolute;
     background-color: black;
     color: white;
     width: 100%;
-
 }
+* {box-sizing:border-box}
+
 @media (max-width: 375px) {
-    body{
-        max-width: 375px;
-    }
-    main{
-        display: block;
-    }
+    html{
+        font-size: 0.7rem;
+      }
+      nav a{
+        font-size: 1.5rem;
+      }
+      main{
+          display: block;
+          align-content: center;
+          justify-content: center;
+          float: none;
+      }
+      .mainText{
+        max-width: 300px;
+        margin-left: 4rem;
+      }
+      .hero-img{
+        margin-left: 2rem;
+        height: 40rem;
+        margin-top: 3rem;
+      }
+      footer{
+        margin-top: 5rem;
+      }
     
 }

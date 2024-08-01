@@ -35,8 +35,9 @@ footer{
     background-color: black;
     color: white;
     width: 100%;
-
 }
+* {box-sizing:border-box}
+
 .map{
     height: 600px;
     margin-right: 2rem;
@@ -51,4 +52,28 @@ footer{
 .loc-img{
     margin: 20px;
     border-radius: 8px;
+}
+@media (max-width:375px) {
+    html{
+      font-size: 0.7rem;
+    }
+    nav a{
+      font-size: 1.5rem;
+    }
+    main{
+        display: block;
+    }
+    .info{
+        margin-left: 2rem;
+    }
+    .loc-img{
+        margin-left: 5rem;
+    }
+    .map{
+        width: 340px;
+        height: 500px;
+    }
+    footer{
+        margin-top: 5rem;
+    }
 }

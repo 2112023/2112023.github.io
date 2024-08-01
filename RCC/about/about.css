@@ -78,5 +78,59 @@ footer{
     background-color: black;
     color: white;
     width: 100%;
+}
+* {box-sizing:border-box}
+@media (max-width: 375px) {
+    html{
+        font-size: 0.7rem;
+      }
+      nav a{
+        font-size: 1.5rem;
+      }
+      main{
+          display: block;
+          align-content: center;
+          justify-content: center;
+          float: none;
+      }
+      .card{
+        flex-direction: column;
+        width: 300px;
+        height: 600px;
+    }
+    .news-img{
+        width: 280px;
+    }
+    .infoText{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        font-size: 1.6rem;
+    }
+    .more-btn{
+        border-top: 1px solid black;
+        border-left: 0;
+        margin-left: 0;
+        margin-top: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .aboutbtn{
+        font-size: 1.8rem;
+    }
+    footer{
+        margin-top: 40px;
+    }
+    .history{
+        display: flex;
+        flex-direction: column;
+    }
+    .historyText{
+        font-size: 1.5rem;
+        max-width: 250px;
+    }
+    .historyImg{
+        height: 30rem;
+        width: 27rem;
 
+    }
 }
