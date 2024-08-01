@@ -61,7 +61,7 @@ footer{
 }
 * {box-sizing:border-box}
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
     html{
         font-size: 0.7rem;
       }

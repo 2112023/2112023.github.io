@@ -53,7 +53,7 @@ footer{
     margin: 20px;
     border-radius: 8px;
 }
-@media (max-width:375px) {
+@media (max-width:425px) {
     html{
       font-size: 0.7rem;
     }
