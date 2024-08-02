@@ -71,6 +71,15 @@ nav a {
     background-color: black;
     color: white;
 }
+.historyText2{
+    margin: 20px; 
+    min-width: 500px;
+    display: flex;
+    min-height: 1rem;
+}
+.historyImg{
+    width: 30rem;
+}
 footer{
     margin-top: 220px;
     padding: 40px;
@@ -83,6 +92,7 @@ footer{
 @media (max-width: 425px) {
     html{
         font-size: 0.7rem;
+        overflow-x: hidden;
       }
       nav a{
         font-size: 1.5rem;
@@ -97,6 +107,7 @@ footer{
         flex-direction: column;
         width: 300px;
         height: 600px;
+        margin-right: 3.5rem;
     }
     .news-img{
         width: 280px;
@@ -127,6 +138,12 @@ footer{
     .historyText{
         font-size: 1.5rem;
         max-width: 250px;
+    }
+    .historyText2{
+        display: block;
+        font-size: 1.5rem;
+        width: 250px;
+        min-width: 250px;
     }
     .historyImg{
         height: 30rem;

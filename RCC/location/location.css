@@ -67,11 +67,12 @@ footer{
         margin-left: 2rem;
     }
     .loc-img{
-        margin-left: 5rem;
+        margin-left: 7rem;
     }
     .map{
         width: 340px;
         height: 500px;
+        margin-left: 4rem;
     }
     footer{
         margin-top: 5rem;
