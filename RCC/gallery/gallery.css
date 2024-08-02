@@ -117,12 +117,15 @@ footer{
     .prev, .next{
       padding: 10px;
       top: 30rem;
+      font-size: 14px;
     }
     .next {
       right: 0;
+      padding-left: 200px;
     }
     .prev{
       left: 0;
+      padding-right: 200px;
     }
     nav{
       margin-bottom: 0;
